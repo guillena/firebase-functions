@@ -21,4 +21,11 @@ exports.helloWorldThird = functions.https.onRequest((request, response) => {
 
 });
 
+exports.helloCoti = functions.https.onRequest((request, response) => {
+    
+    response.send({
+        fulfillment_text: "hello Coti, como estas?"
+    });
+
+});
 
